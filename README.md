@@ -8,5 +8,6 @@ There will be different workflows to choose from. Every workflow will have diffe
 **MVP:**
 The user wants to have a checklist in which he/she can fill in the task which has to be done.
 The checklist starts with one point but an empty one will be added after the one before has been filled out.
+Each point in the checklist should be numerated to symbolize the priority and order in which the tasks will be done. Also the single checkpoints will be able to drag and drop around to rearange the priority/order of the tasks.
 Every task on the checklist will have its own checkbox to complete/tick off the task if finished.
 If (all?) tasks are finished, there will be a feedback like a tick off.
