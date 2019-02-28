@@ -1,5 +1,7 @@
 # Workflow Project
 
+![Workflow design](/design/HomePage.png)
+
 **Rough concept:**
 The project will be a WebApp, as the primary use is for work in which the laptop is the preferred media.
 The porpuse of this project is to help the user with organiszing and structuring the tasks for his/her (daily) work at the company.
