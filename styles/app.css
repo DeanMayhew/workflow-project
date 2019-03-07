@@ -1,0 +1,22 @@
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: red;
+}
+
+.main {
+    display: flex;
+    background-color: green;
+}
+
+.main__section {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 50%;
+}
+
+.footer {
+    background-color: blue;
+}
