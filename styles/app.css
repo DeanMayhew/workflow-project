@@ -1,14 +1,24 @@
 :root {
     font-family: 'Roboto', sans-serif;
+    --color__primary: #786FD4;
+    --color__secondary: #DEDCEF;
+    --color__background: #F0EBF5;
+
+    --color__text: #000000;
+    --color__text--inverted: #ffffff;
 }
 
 .header {
-    background-color: red;
+    /* background-color: var(--color__primary); */
+    background-image: url("../images/flow_upper_left.svg"), url("../images/flow_upper_right.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left top, right top;
 }
 
 .main {
     display: flex;
-    background-color: green;
+    background-color: var(--color__background);
 }
 
 .main__section {
@@ -18,5 +28,8 @@
 }
 
 .footer {
-    background-color: blue;
+    /* background-color: var(--color__primary); */
+    background-image: url("../images/flow_bottom.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
