@@ -9,10 +9,10 @@
 }
 
 .header {
-    /* background-color: var(--color__primary); */
+    background-color: var(--color__background);
     background-image: url("../images/flow_upper_left.svg"), url("../images/flow_upper_right.svg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-position: left top, right top;
 }
 
@@ -28,8 +28,8 @@
 }
 
 .footer {
-    /* background-color: var(--color__primary); */
+    background-color: var(--color__background);
     background-image: url("../images/flow_bottom.svg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
