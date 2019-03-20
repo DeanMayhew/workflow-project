@@ -27,6 +27,18 @@
     flex-basis: 50%;
 }
 
+.list-item__title {
+    font-weight: 700;
+}
+
+.list-item__description {
+    font-weight: 300;
+}
+
+.list-item--done {
+    text-decoration: line-through;
+}
+
 .footer {
     background-color: var(--color__background);
     background-image: url("../images/flow_bottom.svg");
