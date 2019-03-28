@@ -1,4 +1,7 @@
-// increment uniqe id/how to create unique ids?
+// restructure data with flags
+// getter and setter for class
+// read class article again
+// adjust controller
 
 var data = {
     open: [
@@ -27,17 +30,29 @@ var todoListSelector = document.querySelector('ol');
 var doneListSelector = document.querySelector('ul');
 
 data.open.forEach((task) => {
-    var singleTaskElement = document.importNode(templateSelector.content, true);
+    var singleTaskElement = document.importNode(templateSelector.content, true).firstElementChild;
     singleTaskElement.querySelector('.list-item__title').innerText = task.title;
     Boolean(task.description) && (singleTaskElement.querySelector('.list-item__description').innerText = task.description);
     
-    todoListSelector.appendChild(singleTaskElement);
+    var test = todoListSelector.appendChild(singleTaskElement);
+    console.log(test);
 });
 
 data.done.forEach((task) => {
-    var singleTaskElement = document.importNode(templateSelector.content, true);
+    var singleTaskElement = document.importNode(templateSelector.content, true).firstElementChild;
     singleTaskElement.querySelector('.list-item__title').innerText = task.title;
     Boolean(task.description) && (singleTaskElement.querySelector('.list-item__description').innerText = task.description);
     
     doneListSelector.appendChild(singleTaskElement);
 });
+
+class Task {
+
+    constructor(data) {
+        this._title = data.title;
+        this._description = data.description;
+        this._uniqueId = data.uniqueId;
+    }
+}
+
+console.log(new Task(data.open[0]));
